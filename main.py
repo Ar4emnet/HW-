@@ -23,6 +23,16 @@ try:
     word2 = input("What word to replace it with: ")
     message = message.replace(word1, word2)
     print(f"new message: {message}")
+    # task 4
+    message = input("write message: ")
+    print(message[2])
+    print(message[-2])
+    print(message[:5])
+    print(message[:-2])
+    print(message[::2])
+    print(message[1::2])
+    print(message[::-1])
+    print(len(message))
 except Exception as error:
     print(f"\tException occurred: {error}")
 
