@@ -16,8 +16,13 @@ try:
     for letter in message:
         if letter == symbol:
             count_symbol += 1
-
     print(f"The following characters were found = {count_symbol}")
-
+    # task 3
+    message = input("write message: ")
+    word1 = input("which word should be replaced: ")
+    word2 = input("What word to replace it with: ")
+    message = message.replace(word1, word2)
+    print(f"new message: {message}")
 except Exception as error:
     print(f"\tException occurred: {error}")
+
